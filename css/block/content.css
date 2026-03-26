@@ -1,0 +1,291 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .map-btn {
+        display: block;
+        text-align: center;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Foros", serif; 
+    background-color: #f4f4f2; 
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 450px; 
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* 3. ЗАГОЛОВКИ (ЭФФЕКТ КАК НА ФОТО) */
+section {
+    padding: 30px;
+    text-align: center; /* Центрирует весь блок заголовка */
+}
+
+section h2 {
+    font-family: "Foros", serif;
+    font-size: 1.8rem;           /* Размер обычных букв "орогие гости" */
+    font-weight: 400;
+    text-transform: none;        /* Оставляем строчные буквы */
+    color: #5b544f;
+    margin: 0 auto 30px auto;
+    
+    /* Эти настройки склеивают буквы в один блок по центру */
+    display: inline-block; 
+    line-height: 1;
+    text-align: left;
+}
+
+section h2::first-letter {
+    font-family: "Open Sans", cursive !important; /* Ваш Bickham Script */
+    font-size: 5.5rem;          /* Огромная первая буква */
+    color: #5b544f;
+    
+    /* Убираем float, используем vertical-align для прижатия к низу */
+    float: none;                
+    display: inline-block;
+    vertical-align: baseline;   /* Прижимает к нижней линии текста */
+    margin-right: -2px;         /* Притягивает текст к завиткам буквы */
+    line-height: 0.8;
+}
+
+/* 4. ОБЛОЖКА */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../hero-photo.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.names { 
+    font-family: "Open Sans", cursive; 
+    font-size: 4.5rem; 
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+/* 5. СЕКЦИИ И ТЕКСТ */
+.program {
+    padding: 0;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    line-height: 2.5;
+    font-size: 1.1rem;
+}
+
+.calendar-img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* ====================== ДОПОЛНЕНИЯ ДЛЯ РЕФЕРЕНСА ====================== */
+
+/* Фикс для hero и наложенного текста */
+.hero {
+    padding: 0 !important;
+    background: none;
+    height: auto;
+    position: relative;
+}
+
+.hero-top {
+    text-align: center;
+    padding: 35px 30px 25px 30px;
+}
+
+.caplink {
+    font-size: 2.6rem;
+    margin: 0;
+    color: #5b544f;
+}
+
+.subtitle {
+    margin: 8px 0 0 0;
+    color: #8c7a6b;
+    font-size: 0.97rem;
+}
+
+/* Фото + оверлей */
+.photo-container {
+    position: relative;
+    width: 100%;
+}
+
+.couple-photo {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.save-date-overlay {
+    position: absolute;
+    bottom: 15%;           /* ← главное изменение: прижимаем к низу */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.65);
+    width: 92%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.save-the-date {
+    font-size: 1rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+}
+
+.names {
+    font-size: 4rem;           /* подбери под свой шрифт */
+    line-height: 1.05;
+    margin-top: -20px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.text-block {
+    width: 350px;
+    margin: 0 auto;           /* центрирует блок по горизонтали */
+    text-align: center;
+}
+
+.month {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.program-box {              
+    background-image: url('/images/sticker.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-top: -40px;
+    min-height: 600px;               /* важно! */
+    position: relative;
+}
+
+/* Подложка для читаемости текста */
+
+.program-box p {
+    position: relative;
+    z-index: 2;
+    gap: 17px;
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.text-el {
+    padding-top: 130px;
+}
+
+.text-str {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.welcome {
+    padding-bottom: 40px;
+}
+
+.dress-icons-img {
+    padding-top: 30px;
+    margin: 0 auto;           /* центрирует блок по горизонтали */
+    align-items: center;
+}
+
+.venue {
+    position: relative;
+    padding: 50px;
+    margin-top: -50px;
+    min-height: 150px;
+    color: #fff;
+    overflow: hidden; /* важно, чтобы блюр не вылезал */
+}
+
+.venue::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url('/images/фон.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(3px) brightness(0.7);
+    transform: scale(1.1); /* чтобы не было обрезанных краёв */
+
+    z-index: 0;
+}
+
+.venue * {
+    position: relative;
+    z-index: 1; /* контент поверх */
+}
+
+.map-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.map-btn:hover {
+    transform: scale(1.05);
+}
+
+.map-btn:active {
+    transform: scale(0.95); /* эффект нажатия */
+}
+
+.script-light {
+   margin-top: 30px;
+}
+
+.paragraph {
+    margin: 20px 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../fonts/bickhamscriptone.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Foros";
+    src: url("../../fonts/CormorantGaramond-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
