@@ -185,7 +185,7 @@ p {
 }
 
 .program-box {              
-    background-image: url('sticker.png'); 
+    background-image: url('/Priglashenie/images/sticker.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
