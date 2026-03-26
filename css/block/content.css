@@ -185,7 +185,6 @@ p {
 }
 
 .program-box {              
-    background-image: url('/Priglashenie/images/sticker.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,25 +230,6 @@ p {
     min-height: 150px;
     color: #fff;
     overflow: hidden; /* важно, чтобы блюр не вылезал */
-}
-
-.venue::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    filter: blur(3px) brightness(0.7);
-    transform: scale(1.1); /* чтобы не было обрезанных краёв */
-
-    z-index: 0;
 }
 
 .venue * {
